@@ -48,7 +48,7 @@ console.log(n);
 console.log(num);
 */
 
-/* Заание 6
+/* Заание 6 вариант 1
 let dayNumber = +prompt('Введите число первой пятницы месяца');
 
 while (dayNumber <= 31) {
@@ -79,5 +79,16 @@ while (dayNumber <= 31) {
 
 
     break;
+}
+*/
+
+ /* Задание 6 вариант 2
+let dayNumber = +prompt('Введите число первой пятницы месяца');
+for ( ; dayNumber <= 31; dayNumber+=7) { 
+	if (dayNumber % 5 == 0) {
+		console.log(`Сегодня отдыхаем!`); 
+		continue; 
+	}
+	console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
 }
 */
