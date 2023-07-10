@@ -86,3 +86,19 @@ switch (monthNumber) {
         break;
 }
 */
+
+/* Задание 8
+const clientIos = 1 
+const clientAndroid = 0 
+ 
+function checkClientPlatform (props) { 
+    if(props === 1) { 
+        console.log('Установите версию приложения для iOS по ссылке');
+    } else { 
+        console.log('Установите версию приложения для android по ссылке');
+    } 
+} 
+ 
+checkClientPlatform(clientIos) 
+checkClientPlatform(clientAndroid)
+*/
