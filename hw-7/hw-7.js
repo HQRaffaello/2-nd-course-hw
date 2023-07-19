@@ -48,6 +48,15 @@ function searchStart(str, search) {
 searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
 searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
 searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
+
+Вариант 3
+function searchStart(words, prefix) {
+return words.filter(word => word.toLowerCase().startsWith(prefix.toLowerCase()));
+}
+
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); 
+console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); 
+console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'));
 */
 
 /* Задание 3
@@ -92,8 +101,10 @@ getRandomArrNumbers(12)
 
 /* Задание 7
 function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
+    return Math.floor(Math.random() * (max - min) + min);
 }
+
+console.log(getRandomArbitrary(3, 100));
 */
 
 /* Задание 8
@@ -102,28 +113,28 @@ console.log(nowDate);
 */
 
 /* Задание 9
-let currentDate = new Date ();
-setDate(getDate(73))
+let currentDate = new Date();
+let futureDate = new Date(); 
+futureDate.setDate(currentDate.getDate() + 73);
+
+console.log(futureDate.toDateString());
 */
 
 /* Задание 10
-// для начала создадим массив, в который занесем все дни недели на русском
-// помним, что отсчет в JS начинается с воскресенья - 0
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-// создадим массив, где будем хранить названия месяцев на русском
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
 "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
 let myDate = new Date(); // здесь мы получаем текущую дату
-let fullDate = "Сегодня: " + myDate.getDate() + // getDate возвращает число
-" " + months[myDate.getMonth()] + // getMonth возвращает номер месяца, который мы можем использовать в качестве индекса для массива months
-" " + myDate.getFullYear() + // getFullYear возвращает год
-", " + days[myDate.getDay()]; // getDay возвращает номер дня недели, который мы используем в качестве индекса для массива days
-let hour = myDate.getHours(); // получаем час из нашей даты
-let minute = myDate.getMinutes(); // получаем минуты
-let second = myDate.getSeconds(); // получаем секунды
+let fullDate = "Сегодня: " + myDate.getDate() + 
+" " + months[myDate.getMonth()] + 
+" " + myDate.getFullYear() + 
+", " + days[myDate.getDay()];
+let hour = myDate.getHours();
+let minute = myDate.getMinutes();
+let second = myDate.getSeconds();
 
-console.log(fullDate); // Сегодня: 1 Февраль 2023, Среда
+console.log(fullDate);
 console.log("Текущее время: " + hour + ":" + minute + ":" + second);
 */
 
