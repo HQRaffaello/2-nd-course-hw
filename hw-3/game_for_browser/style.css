@@ -388,7 +388,7 @@ a {
     font-weight: 300;
     line-height: 22px;
   }
-  .content__picture {
+  .content__picture svg {
     width: 344px;
     height: 236px;
   }
@@ -422,7 +422,7 @@ a {
   .contentv2__picture {
     order: 1;
   }
-  .contentv2__picture {
+  .contentv2__picture svg {
     width: 344px;
     height: 236px;
   }
