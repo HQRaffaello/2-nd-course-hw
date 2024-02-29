@@ -88,6 +88,6 @@ for ( ; dayNumber <= 31; dayNumber+=7) {
 	if (dayNumber % 5 == 0) { 
 		continue; 
 	}
-	console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
+	alert(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
 }
 */

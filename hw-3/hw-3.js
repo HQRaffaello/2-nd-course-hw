@@ -4,20 +4,8 @@ let user_password = prompt('Введите пароль:')
 
 if (password === user_password) {
     alert('Пароль введен верно')
-    
 } else {
     alert('Пароль введен неправильно')
-}
-
-
-let password = 'пароль';
-let user_password = prompt('Введите пароль:')
-
-if (password === user_password) {
-    console.log('Пароль введен верно')
-    
-} else {
-    console.log('Пароль введен неправильно')
 }
 */
 
@@ -29,8 +17,6 @@ if (c > 0 && c < 10) {
 } else {
     console.log('Неверно');
 }
-
-(c > 0 && c < 10) ? console.log('Верно') : console.log('Неверно');
 */
 
 /* Задание 3
@@ -42,8 +28,6 @@ if (d > 100 || e < 100) {
 } else {
     console.log('Неверно');
 }
-
-(d > 100 || e < 100) ? console.log('Верно') : console.log('Неверно');
 */
 
 /* Задание 4
@@ -84,6 +68,15 @@ switch (monthNumber) {
     default:
         console.log('Вы ввели некрроктное значение!');
         break;
+}
+*/
+
+/*Задание 7
+let a = +(prompt('Пожалуйста, введите любое число!'));
+if (a % 2 == 0) {
+    alert('Число четное')
+} else {
+    alert('Число нечетное')
 }
 */
 
