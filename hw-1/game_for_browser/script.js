@@ -13,3 +13,21 @@ function getSeason() {
   }
   
 }
+
+function wordquzizz() {
+const words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+const shuffledWords = words.sort(() => Math.random() - 0.5);
+
+alert("Перемешанный массив: " + shuffledWords);
+
+const firstWord = prompt("Чему равнялся первый элемент массива?");
+const lastWord = prompt("Чему равнялся последний элемент массива?");
+
+if (firstWord === shuffledWords[0] && lastWord === shuffledWords[shuffledWords.length - 1]) {
+  alert("Поздравляем, вы угадали оба слова!");
+} else if (firstWord === shuffledWords[0] || lastWord === shuffledWords[shuffledWords.length - 1]) {
+  alert("Вы были близки к победе!");
+} else {
+  alert("Вы ответили неверно");
+}
+}
