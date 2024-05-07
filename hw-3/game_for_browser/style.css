@@ -360,9 +360,15 @@ a {
     background: #EB443F;
   }
   .game {
+    justify-content: center;
     flex-wrap: wrap;
   }
+  .game.game__item {
+    width: 343px;
+    height: 300px;
+  }
   .content {
+    justify-content: center;
     padding-top: 51px;
     padding-bottom: 85px;
     gap: 64px;
@@ -393,6 +399,7 @@ a {
     height: 236px;
   }
   .contentv2 {
+    justify-content: center;
     padding-top: 51px;
     padding-bottom: 85px;
     gap: 64px;
