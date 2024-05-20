@@ -1,4 +1,4 @@
-@media (max-width: 376px) {
+@media (max-width: 768px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -79,7 +79,7 @@
                 line-height: 22px;
             }
         }
-        &__picture {
+        &__picture svg {
             width: 344px;
             height: 236px;
             
@@ -115,7 +115,7 @@
         &__picture {
             order: 1;
         }
-        &__picture {
+        &__picture svg {
             width: 344px;
             height: 236px;
             
