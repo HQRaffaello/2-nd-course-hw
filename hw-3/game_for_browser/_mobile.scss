@@ -51,16 +51,10 @@
     }
 
     .game {
-        justify-content: center;
         flex-wrap: wrap;
-        &.game__item {
-            width: 343px;
-            height: 300px;
-        }
     }
 
     .content {
-        justify-content: center;
         padding-top: 51px;
         padding-bottom: 85px;
         gap: 64px;
@@ -85,7 +79,7 @@
                 line-height: 22px;
             }
         }
-        &__picture {
+        &__picture svg {
             width: 344px;
             height: 236px;
             
@@ -93,7 +87,6 @@
     }
 
     .contentv2 {
-        justify-content: center;
         padding-top: 51px;
         padding-bottom: 85px;
         gap: 64px;
@@ -122,7 +115,7 @@
         &__picture {
             order: 1;
         }
-        &__picture {
+        &__picture svg {
             width: 344px;
             height: 236px;
             
